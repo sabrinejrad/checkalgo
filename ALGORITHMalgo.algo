@@ -1,0 +1,23 @@
+ALGORITHM  
+VAR
+    char_counter:INTEGER:=0;
+    vowels_counter:INTEGER:=0;
+    word_counter:INTEGER:=0;
+    c:CHAR;
+
+BEGIN
+REPEAT
+read(c);
+char_counter:=char_counter+1,
+IF (c= 'a' or c='e' or c='o' or c='i' or c='u' or c='y') THEN
+    vowels_counter:=vowels_counter+1;
+END_IF
+    IF (c=' ' or c='.') THEN
+     word_counter:=word_counter+1;
+    END_IF
+UNTIL (c:=".")
+write();
+write();
+write();
+    
+END
